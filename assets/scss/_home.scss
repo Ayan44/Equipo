@@ -27,242 +27,189 @@ li {
 
 
 
-            .mySwiper {
-                .swiper-slide {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-
-                    img {
-                        height: 274px;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-
-                    .swiper-text {
-                        position: absolute;
-
-                        .swiper-header {
-                            h1 {
-                                font-family: "Mulish", sans-serif;
-                                font-size: clamp(30px, 4vw, 60px);
-                                font-weight: 800;
-                                line-height: clamp(36px, 5vw, 78px);
-                                text-align: left;
-                                color: white;
-                                width: clamp(350px, 70vw, 727px);
-                            }
-                        }
-
-                        .swiper-paragraph {
-                            margin-top: clamp(20px, 5vw, 30px);
-
-                            p {
-                                display: none;
-                            }
-                        }
-
-                        .swiper-button {
-                            display: flex;
-                            margin-top: clamp(20px, 5vw, 40px);
-
-                            button {
-                                background-color: #082E60;
-                                border: none;
-                                padding: 12px, 10px, 12px, 10px;
-                                width: clamp(130px, 20vw, 160px);
-                                font-size: clamp(14px, 2vw, 18px);
-                                border-radius: 12px;
-                                outline: none;
-
-
-                                &:focus {
-                                    outline: none;
-                                    box-shadow: none;
-                                }
-                            }
-                        }
-
-                        .swiper-pagination {
-                            background: var(--swiper-pagination-color);
-                            background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
-                            opacity: var(--swiper-pagination-bullet-inactive-opacity, );
-                        }
-                    }
-                }
-
-                .swiper-button-next,
-                .swiper-button-prev {
-                    display: none;
-                }
-            }
-        }
-    
-
-
-
-    // #home-section2 {
-    //     margin: 70px 0;
-    //     .home-container2 {
-    //         .left-container2 {
-    //             position: relative;
-    //             overflow: hidden;
-    //                 .img-container21,
-    //                 .img-container22 {
-    //                     position: absolute;
-
-    //                     img {
-    //                         width: 100%;
-    //                         height: auto;
-    //                         display: block;
-    //                         object-fit: cover;
-
-    //                     }
-    //                 }
-
-    //                 .img-container21 {
-    //                     top: 0;
-    //                     left: 0;
-    //                 }
-
-    //                 .img-container22 {
-    //                     top: 170px;
-    //                     left: 230px;
-    //                 }
-
-
-    //         }
-    //     }
-    // }
-
-
-
-    #home-section4 {
-        height: 800px;
-        margin-top: 70px;
-
-        .home-container4 {
+    .mySwiper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            justify-content: space-between;
 
-            .left-container4 {
+            img {
+                height: 274px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .swiper-text {
                 position: absolute;
-                top: 30px;
-            }
 
-            .right-container4 {
-                position: absolute;
+                .swiper-header {
+                    h1 {
+                        font-family: "Mulish", sans-serif;
+                        font-size: clamp(30px, 4vw, 60px);
+                        font-weight: 800;
+                        line-height: clamp(36px, 5vw, 78px);
+                        text-align: left;
+                        color: white;
+                        width: clamp(350px, 70vw, 727px);
+                    }
+                }
+
+                .swiper-paragraph {
+                    margin-top: clamp(20px, 5vw, 30px);
+
+                    p {
+                        display: none;
+                    }
+                }
+
+                .swiper-button {
+                    display: flex;
+                    margin-top: clamp(20px, 5vw, 40px);
+
+                    button {
+                        background-color: #082E60;
+                        border: none;
+                        padding: 12px, 10px, 12px, 10px;
+                        width: clamp(130px, 20vw, 160px);
+                        font-size: clamp(14px, 2vw, 18px);
+                        border-radius: 12px;
+                        outline: none;
+
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                .swiper-pagination {
+                    background: var(--swiper-pagination-color);
+                    background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, );
+                }
             }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
         }
     }
+}
 
 
-    #home-section6 {
-        margin-top: 70px;
-
-        .home-container6 {
-            overflow: hidden;
-
-            h4 {
-                font-family: "Mulish";
-                font-size: clamp(20px, 2vw + 1rem, 32px);
-                font-weight: 500;
-                line-height: clamp(20px, 2.5vw, 32px);
-                text-align: center;
-                color: #A3A3A3;
-                margin-bottom: clamp(20px, 2vw, 40px);
-            }
-
-            .icon-box {
-                .icons {
-                    margin-right: 20px;
 
 
-                    img {
-                        filter: grayscale(100%);
-                        transition: filter 0.3s ease;
+// #home-section2 {
+//     margin: 70px 0;
+//     .home-container2 {
+//         .left-container2 {
+//             position: relative;
+//             overflow: hidden;
+//                 .img-container21,
+//                 .img-container22 {
+//                     position: absolute;
+
+//                     img {
+//                         width: 100%;
+//                         height: auto;
+//                         display: block;
+//                         object-fit: cover;
+
+//                     }
+//                 }
+
+//                 .img-container21 {
+//                     top: 0;
+//                     left: 0;
+//                 }
+
+//                 .img-container22 {
+//                     top: 170px;
+//                     left: 230px;
+//                 }
 
 
-                        &:hover {
-                            filter: none;
-                        }
+//         }
+//     }
+// }
 
-                        width:clamp(103.5px, 10vw, 207px);
-                        height: clamp(63px, calc(4vw + 42px), 126px);
-                    }
 
-                }
-            }
+
+#home-section4 {
+    height: 800px;
+    margin-top: 70px;
+
+    .home-container4 {
+        position: relative;
+        justify-content: space-between;
+
+        .left-container4 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .right-container4 {
+            position: absolute;
         }
     }
+}
+
+
+// #home-section6 {
+//     margin-top: 70px;
+
+//     .home-container6 {
+//         overflow: hidden;
+
+//         h4 {
+//             font-family: "Mulish";
+//             font-size: clamp(20px, 2vw + 1rem, 32px);
+//             font-weight: 500;
+//             line-height: clamp(20px, 2.5vw, 32px);
+//             text-align: center;
+//             color: #A3A3A3;
+//             margin-bottom: clamp(20px, 2vw, 40px);
+//         }
+
+//         .icon-box {
+//             .icons {
+//                 margin-right: 20px;
+
+
+//                 img {
+//                     filter: grayscale(100%);
+//                     transition: filter 0.3s ease;
+
+
+//                     &:hover {
+//                         filter: none;
+//                     }
+
+//                     width:clamp(103.5px, 10vw, 207px);
+//                     height: clamp(63px, calc(4vw + 42px), 126px);
+//                 }
+
+//             }
+//         }
+//     }
+// }
 
 
 
 
-
-    @media (min-width:768px) {
-        #home-section1 {
-            .mySwiper {
-                .swiper-slide {
-                    img {
-                        height: 500px;
-                    }
-
-                    .swiper-text {
-                        .swiper-paragraph {
-                            p {
-                                display: block;
-                                font-family: "Mulish", sans-serif;
-                                font-size: clamp(8px, 4vw, 16px);
-                                font-weight: 400;
-                                line-height: clamp(12px, 5vw, 24px);
-                                text-align: left;
-                                color: white;
-                                width: clamp(350px, 70vw, 727px);
-                            }
-                        }
-                    }
+@media (min-width:768px) {
+    #home-section1 {
+        .mySwiper {
+            .swiper-slide {
+                img {
+                    height: 500px;
                 }
 
-                .swiper-button-next,
-                .swiper-button-prev {
-                    display: block;
-                    color: white;
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-
-        }
-
-        #home-section6 {
-            .home-container6 {
-                .icon-box {
-                    .icons {
-                        :first-child {
-                            margin-right: 0px;
-                        }
-
-                        :nth-child(2) {
-                            margin-right: 0px;
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-
-    @media (min-width:1024px) {
-        #home-section1 {
-            .mySwiper {
-                .swiper-slide {
-                    img {
-                        height: 750px;
-                    }
-
-                    .swiper-text {
+                .swiper-text {
+                    .swiper-paragraph {
                         p {
                             display: block;
                             font-family: "Mulish", sans-serif;
@@ -276,10 +223,61 @@ li {
                     }
                 }
             }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: block;
+                color: white;
+                width: 30px;
+                height: 30px;
+            }
         }
 
     }
 
+    // #home-section6 {
+    //     .home-container6 {
+    //         .icon-box {
+    //             .icons {
+    //                 :first-child {
+    //                     margin-right: 0px;
+    //                 }
+
+    //                 :nth-child(2) {
+    //                     margin-right: 0px;
+    //                 }
+
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+@media (min-width:1024px) {
+    #home-section1 {
+        .mySwiper {
+            .swiper-slide {
+                img {
+                    height: 750px;
+                }
+
+                .swiper-text {
+                    p {
+                        display: block;
+                        font-family: "Mulish", sans-serif;
+                        font-size: clamp(8px, 4vw, 16px);
+                        font-weight: 400;
+                        line-height: clamp(12px, 5vw, 24px);
+                        text-align: left;
+                        color: white;
+                        width: clamp(350px, 70vw, 727px);
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 
@@ -291,4 +289,5 @@ li {
 
 
 
-    //  home-section-6 responsivlikde iconlari cevirmek
+
+//  home-section-6 responsivlikde iconlari cevirmek

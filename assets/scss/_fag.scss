@@ -23,7 +23,7 @@ li {
 
 // body {
 //     overflow-y: auto;
-//     overflow-x: auto;
+//     overflow-x: hidden;
 // }
 
 
@@ -63,9 +63,74 @@ li {
     }
 }
 
-
-
 #faqs-section2 {
+    background-color: #F6F6F6;
+
+    .faqs-links {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+
+        .faqs-links-left {
+            width: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                a {
+                    font-family: "Mulish";
+                    font-size: clamp(8px, 2vw, 16px);
+                    line-height: clamp(8px, 4vw, 16px);
+                }
+            }
+
+            &:first-child {
+                :first-child {
+                    a {
+                        color: #082E60;
+                        font-weight: 400;
+                    }
+                }
+
+                :nth-child(2) {
+                    font-size: clamp(8px, 2vw, 16px);
+                    color: #979797;
+                }
+
+                :nth-child(3) {
+                    a {
+                        color: #979797;
+                        font-weight: 500;
+                    }
+
+                }
+
+
+            }
+        }
+
+        .faqs-links-right {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0;
+                font-family: "Mulish";
+                font-size: clamp(8px, 2vw, 16px);
+                font-weight: 500;
+                line-height: clamp(8px, 4vw, 16px);
+                color: #979797;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+#faqs-section3 {
     :root {
         --header-padding: 1rem 0;
         --border-color: #e4e4e7;
@@ -187,7 +252,7 @@ li {
     }
 }
 
-#faq-section3 {
+#faqs-section4 {
     margin-top: clamp(35px, 10vw, 70px);
     height: 360px;
     background-image: url(/assets/images/faq-img.svg);
@@ -196,7 +261,7 @@ li {
     background-position: center;
     position: relative;
 
-    .overlay3 {
+    .overlay4 {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -205,8 +270,8 @@ li {
         background-color: #0317318F;
         display: flex;
 
-        .faq-container3 {
-            .faq-section3-title {
+        .faq-container4 {
+            .faq-section4-title {
                 padding-top: clamp(10px, 4vw, 30px);
 
                 h1 {
@@ -219,7 +284,7 @@ li {
                 }
             }
 
-            .faq-section3-form {
+            .faq-section4-form {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -299,6 +364,16 @@ li {
     }
 
     #faqs-section2 {
+        .faqs-links {
+            padding: 17px 0;
+
+            .faqs-links-left {
+                width: 100px;
+            }
+        }
+    }
+
+    #faqs-section3 {
         .accordion-container {
             width: 100%;
 
@@ -330,12 +405,12 @@ li {
         }
     }
 
-    #faq-section3 {
+    #faqs-section4 {
         height: 450px;
 
-        .overlay3 {
-            .faq-container3 {
-                .faq-section3-form {
+        .overlay4 {
+            .faq-container4 {
+                .faq-section4-form {
                     form {
                         width: 575px;
 
@@ -366,6 +441,17 @@ li {
     }
 
     #faqs-section2 {
+        .faqs-links {
+            padding: 21px 0;
+
+            .faqs-links-left {
+                width: 130px;
+            }
+        }
+    }
+
+
+    #faqs-section3 {
         .accordion-container {
             width: 100%;
 
@@ -397,12 +483,12 @@ li {
         }
     }
 
-    #faq-section3 {
+    #faqs-section4 {
         height: 540px;
 
-        .overlay3 {
-            .faq-container3 {
-                .faq-section3-form {
+        .overlay4 {
+            .faq-container4 {
+                .faq-section4-form {
                     form {
                         width: 575px;
 
