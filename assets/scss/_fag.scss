@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+.container-general {
+    width: 93%;
+    margin: auto;
+}
+
+
+
+// body {
+//     overflow-y: auto;
+//     overflow-x: auto;
+// }
+
+
+#faqs-section1 {
+    height: 170px;
+    background-image: url(/assets/images/FAQs-section1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.49);
+        display: flex;
+        align-items: center;
+
+
+        .faqs-container1-txt {
+            h1 {
+                font-family: "Mulish";
+                font-size: clamp(24px, 4vw, 48px);
+                font-weight: 700;
+                line-height: clamp(25px, 5vw, 50px);
+                text-align: left;
+                color: white;
+            }
+
+        }
+
+
+
+    }
+}
+
+
+
+#faqs-section2 {
+    :root {
+        --header-padding: 1rem 0;
+        --border-color: #e4e4e7;
+        --title: 1rem;
+        --content: 0.95rem;
+        --icon-size: 1.5rem;
+        --primary-color: #c8dc71;
+    }
+
+
+
+    .accordion-container {
+        width: 100%;
+
+        .accordion-header {
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            justify-content: center;
+
+            h1 {
+                font-family: "Mulish";
+                font-size: clamp(20px, 4vw, 40px);
+                font-weight: 700;
+                line-height: clamp(20px, 3vw, 40px);
+                text-align: left;
+                color: #1A1A1A;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-family: "Mulish";
+                font-size: clamp(8px, 4vw, 16px);
+                font-weight: 400;
+                line-height: clamp(12px, 3vw, 24px);
+                text-align: left;
+                color: #525558;
+            }
+        }
+    }
+
+    details {
+        font-size: var(--title);
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid var(--border-color);
+        transition: all 0.3s ease-in-out;
+
+        /* Added padding for each FAQ item */
+
+        &[open] summary {
+            background-color: #082E60;
+            /* Change title box color when clicked */
+            color: white;
+        }
+    }
+
+    summary {
+        user-select: none;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: var(--header-padding);
+        transition: background-color 0.3s ease-in-out;
+        padding: clamp(15px, 4vw, 25px) clamp(5px, 2vw, 10px);
+        color: black;
+        border-radius: 10px;
+    }
+
+    .accordion-title {
+        font-family: "Poppins";
+        font-size: clamp(10px, 2vw, 16px);
+        line-height: clamp(14px, 2vw, 24px);
+        text-align: left;
+        width: 90%;
+        font-weight: 500;
+        transition: all 250ms ease-in-out;
+    }
+
+    .accordion-icon {
+        opacity: 0.5;
+        pointer-events: none;
+        position: absolute;
+        right: 1rem;
+        transition: all 150ms ease-out;
+        width: clamp(16px, 4vw, 24px);
+        height: clamp(18px, 5vh, 26.4px);
+    }
+
+    .accordion-icon svg {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .accordion-content {
+        color: #3c3e47;
+        padding: var(--content-padding);
+        font-size: var(--content);
+        font-weight: 400;
+        line-height: 1.65;
+        font-family: "Mulish";
+        font-size: clamp(10px, 2vw, 16px);
+        line-height: clamp(14px, 2vw, 24px);
+        text-align: left;
+        margin: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
+    }
+
+    /** Remove Marker */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /** Rotate Icon */
+    details[open] .accordion-icon svg {
+        transform: rotate(180deg);
+    }
+}
+
+#faq-section3 {
+    margin-top: clamp(35px, 10vw, 70px);
+    height: 360px;
+    background-image: url(/assets/images/faq-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .overlay3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #0317318F;
+        display: flex;
+
+        .faq-container3 {
+            .faq-section3-title {
+                padding-top: clamp(10px, 4vw, 30px);
+
+                h1 {
+                    font-family: "Mulish";
+                    font-size: clamp(20px, 2vw + 1rem, 40px);
+                    font-weight: 700;
+                    line-height: clamp(1.25, 2vw + 1rem, 2.5);
+                    text-align: left;
+                    color: white;
+                }
+            }
+
+            .faq-section3-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: clamp(25px, 5vw, 50px);
+                border-radius: 10px;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 575px;
+
+                    .form-control {
+                        outline: none;
+                        padding: clamp(5px, 2vw, 10px) clamp(15px, 4vw, 30px) clamp(5px, 2vw, 10px) clamp(15px, 4vw, 30px);
+                        margin-bottom: clamp(8px, 1vw, 15px);
+                        border: none;
+                        font-size: clamp(10px, 2vw, 14px);
+                        background-color: #f1f1f1;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        height: 24px;
+
+                        &:first-child {
+                            border-radius: 50px;
+                        }
+
+                        &:nth-child(2) {
+                            border-radius: 50px;
+                        }
+
+                        &:nth-child(3) {
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .form-control::placeholder {
+                        color: #aaa;
+                    }
+
+                    textarea.form-control {
+                        height: 90px;
+                        resize: none;
+                        overflow-y: hidden;
+                        overflow-x: hidden;
+                    }
+
+                    .btn {
+                        align-self: flex-end;
+                        width: 80px;
+                        height: 28px;
+                        background: #073A7D;
+                        border: none;
+                        border-radius: 25px;
+                        color: #fff;
+                        font-size: clamp(7px, 2vw + 1rem, 14px);
+                        cursor: pointer;
+                        transition: background 0.3s;
+                        margin-top: clamp(15px, 2vw, 30px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            background: #004494;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) {
+    #faqs-section1 {
+        height: 250px;
+    }
+
+    #faqs-section2 {
+        .accordion-container {
+            width: 100%;
+
+            .accordion-header {
+                display: flex;
+                flex-direction: column;
+                height: 130px;
+                justify-content: center;
+
+                h1 {
+                    font-family: "Mulish";
+                    font-size: clamp(20px, 4vw, 40px);
+                    font-weight: 700;
+                    line-height: clamp(20px, 3vw, 40px);
+                    text-align: left;
+                    color: #1A1A1A;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-family: "Mulish";
+                    font-size: clamp(8px, 4vw, 16px);
+                    font-weight: 400;
+                    line-height: clamp(12px, 3vw, 24px);
+                    text-align: left;
+                    color: #525558;
+                }
+            }
+        }
+    }
+
+    #faq-section3 {
+        height: 450px;
+
+        .overlay3 {
+            .faq-container3 {
+                .faq-section3-form {
+                    form {
+                        width: 575px;
+
+                        .form-control {
+                            height: 28px;
+                        }
+
+                        textarea.form-control {
+                            height: 120px;
+                        }
+
+                        .btn {
+                            width: 100px;
+                            height: 32px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1024px) {
+    #faqs-section1 {
+        height: 370px;
+    }
+
+    #faqs-section2 {
+        .accordion-container {
+            width: 100%;
+
+            .accordion-header {
+                display: flex;
+                flex-direction: column;
+                height: 160px;
+                justify-content: center;
+
+                h1 {
+                    font-family: "Mulish";
+                    font-size: clamp(20px, 4vw, 40px);
+                    font-weight: 700;
+                    line-height: clamp(20px, 3vw, 40px);
+                    text-align: left;
+                    color: #1A1A1A;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-family: "Mulish";
+                    font-size: clamp(8px, 4vw, 16px);
+                    font-weight: 400;
+                    line-height: clamp(12px, 3vw, 24px);
+                    text-align: left;
+                    color: #525558;
+                }
+            }
+        }
+    }
+
+    #faq-section3 {
+        height: 540px;
+
+        .overlay3 {
+            .faq-container3 {
+                .faq-section3-form {
+                    form {
+                        width: 575px;
+
+                        .form-control {
+                            height: 34px;
+                        }
+
+                        textarea.form-control {
+                            height: 150px;
+
+                        }
+
+                        .btn {
+                            width: 120px;
+                            height: 36px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
