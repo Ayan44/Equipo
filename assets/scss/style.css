@@ -472,20 +472,97 @@ li {
   display: none;
 }
 
-#home-section4 {
-  height: 800px;
-  margin-top: 70px;
+#home-section2 {
+  margin-top: clamp(35px, 10vw, 70px);
 }
-#home-section4 .home-container4 {
-  position: relative;
+#home-section2 .home-section2-container {
+  overflow-x: hidden;
+  gap: clamp(15px, 5vw, 30px);
+}
+#home-section2 .home-section2-container .home-section2-img img {
+  max-width: 100%;
+  height: auto;
+}
+#home-section2 .home-section2-container .home-section2-txt h5 {
+  font-family: "Mulish";
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  line-height: clamp(14px, 2vw, 20px);
+  text-align: center;
+  color: #A3A3A3;
+  margin-bottom: clamp(15px, 2vh, 30px);
+}
+#home-section2 .home-section2-container .home-section2-txt h1 {
+  font-family: "Mulish";
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  line-height: clamp(30px, 4vh, 50px);
+  text-align: center;
+  color: #1A1A1A;
+  margin-bottom: clamp(20px, 3vh, 60px);
+}
+#home-section2 .home-section2-container .home-section2-txt h1 span {
+  color: #073A7D;
+}
+#home-section2 .home-section2-container .home-section2-txt p {
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: clamp(16px, 2vw, 24px);
+  text-align: left;
+  color: #525558;
+  margin-bottom: clamp(15px, 2vh, 30px);
+}
+#home-section2 .home-section2-container .home-section2-txt ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
   justify-content: space-between;
+  height: 150px;
 }
-#home-section4 .home-container4 .left-container4 {
-  position: absolute;
-  top: 30px;
+#home-section2 .home-section2-container .home-section2-txt ul li {
+  font-size: 16px;
 }
-#home-section4 .home-container4 .right-container4 {
-  position: absolute;
+#home-section2 .home-section2-container .home-section2-txt ul li i {
+  color: #073A7D;
+  padding-right: clamp(8px, 2vw, 15px);
+}
+
+#home-section6 {
+  margin-top: clamp(35px, 10vw, 70px);
+}
+#home-section6 .home-container6 {
+  overflow: hidden;
+}
+#home-section6 .home-container6 h4 {
+  font-family: "Mulish";
+  font-size: clamp(20px, 2vw + 1rem, 32px);
+  font-weight: 500;
+  line-height: clamp(20px, 2.5vw, 32px);
+  text-align: center;
+  color: #A3A3A3;
+  margin-bottom: clamp(20px, 2vw, 40px);
+}
+#home-section6 .home-container6 .icon-box {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#home-section6 .home-container6 .icon-box ::-webkit-scrollbar {
+  width: 0;
+}
+#home-section6 .home-container6 .icon-box .icons {
+  margin-right: clamp(14px, 5vw, 20px);
+}
+#home-section6 .home-container6 .icon-box .icons img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  width: clamp(103.5px, 10vw, 207px);
+  height: clamp(63px, 4vw + 42px, 126px);
+}
+#home-section6 .home-container6 .icon-box .icons img:hover {
+  filter: none;
 }
 
 @media (min-width: 768px) {
@@ -508,6 +585,9 @@ li {
     color: white;
     width: 30px;
     height: 30px;
+  }
+  #home-section2 .home-section2-container .home-section2-txt h5, #home-section2 .home-section2-container .home-section2-txt h1 {
+    text-align: left;
   }
 }
 @media (min-width: 1024px) {

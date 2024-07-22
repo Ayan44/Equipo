@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiperHome1 = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -152,21 +152,3 @@ document.querySelectorAll("details").forEach((el) => {
 
 
 
-      var iconSwiper = new Swiper(".my-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        },
-      });
