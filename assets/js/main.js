@@ -1,10 +1,11 @@
-var swiperHome1 = new Swiper(".mySwiper", {
+var swiperHome1 = new Swiper(".home-swiper1", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  effect: "fade", 
+  effect: "fade",
   fadeEffect: {
     crossFade: true,
+    duration: 1000,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -15,18 +16,11 @@ var swiperHome1 = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 2000,
+    delay: 2500,
     disableOnInteraction: false,
   },
-  speed: 3000, 
+  speed: 1500,
 });
-
-
-
-
-
-
-
 
 class Accordion {
   constructor(el) {
@@ -146,9 +140,56 @@ document.querySelectorAll("details").forEach((el) => {
 
 
 
+// var swiperHome5 = new Swiper(".home-swiper5", {
+//   slidesPerView: 1,
+//   grid: {
+//     rows: 3,
+//   },
+//   spaceBetween: 10,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2,
+//       grid: {
+//         rows: 2,
+//       },
+//       spaceBetween: 40,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//       spaceBetween: 50,
+//       grid: {
+//         rows: 1,
+//       },
+//     },
+//   },
+// });
 
 
 
 
-
-
+var swiper = new Swiper(".home-swiper6", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 5,
+      spaceBetween:20
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
+});
