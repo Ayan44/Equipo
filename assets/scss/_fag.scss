@@ -239,6 +239,7 @@ li {
         line-height: clamp(14px, 2vw, 24px);
         text-align: left;
         margin: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
+        
     }
 
     /** Remove Marker */
@@ -279,7 +280,7 @@ li {
                     font-size: clamp(20px, 2vw + 1rem, 40px);
                     font-weight: 700;
                     line-height: clamp(1.25, 2vw + 1rem, 2.5);
-                    text-align: left;
+                    text-align: center;
                     color: white;
                 }
             }
@@ -358,7 +359,7 @@ li {
 }
 
 
-@media (min-width:768px) {
+@media (min-width:992px) {
     #faqs-section1 {
         height: 250px;
     }
@@ -435,7 +436,7 @@ li {
 }
 
 
-@media (min-width:1024px) {
+@media (min-width:1200px) {
     #faqs-section1 {
         height: 370px;
     }

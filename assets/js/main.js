@@ -8,7 +8,7 @@ var swiperHome1 = new Swiper(".home-swiper1", {
     duration: 1000,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination1",
     clickable: true,
   },
   navigation: {
@@ -21,6 +21,83 @@ var swiperHome1 = new Swiper(".home-swiper1", {
   },
   speed: 1500,
 });
+
+
+    var homeSwiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      grid: {
+        rows: 3,
+      },
+      pagination: {
+        el: ".swiper-pagination3",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          grid: {
+            rows: 3,
+          },
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          grid: {
+            rows: 2,
+          },
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          grid: {
+            rows: 2,
+          },
+        },
+      },
+    });
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".number");
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-count");
+          const count = +counter.innerText;
+
+          const speed = 200; 
+          const increment = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 1);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
 
 class Accordion {
   constructor(el) {
@@ -140,38 +217,7 @@ document.querySelectorAll("details").forEach((el) => {
 
 
 
-// var swiperHome5 = new Swiper(".home-swiper5", {
-//   slidesPerView: 1,
-//   grid: {
-//     rows: 3,
-//   },
-//   spaceBetween: 10,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       grid: {
-//         rows: 2,
-//       },
-//       spaceBetween: 40,
-//     },
-//     1024: {
-//       slidesPerView: 4,
-//       spaceBetween: 50,
-//       grid: {
-//         rows: 1,
-//       },
-//     },
-//   },
-// });
-
-
-
-
-var swiper = new Swiper(".home-swiper6", {
+var homeSwiper6 = new Swiper(".home-swiper6", {
   slidesPerView: 3,
   spaceBetween: 20,
   pagination: {
